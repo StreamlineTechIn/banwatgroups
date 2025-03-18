@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./compnents/Landing_Page/Main";
+import Navbar from "./compnents/Navbar/Navbar";
+import ProductList from "./compnents/ProductList/ProductList";
+import ProductDisplay from "./compnents/ProductList/ProductDisplay";
+import About from "./compnents/About/About";
+import Plants from "./compnents/Plants/Plants";
+import FAQ from "./compnents/FAQ/FAQ";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import Contact from "./compnents/Contact/Contact";
+// import Footer from "./compnents/Landing_Page/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div
+        className="bg-[#D7EAD3] min-h-screen flex flex-col items-center"
+        style={{
+          backgroundColor: "#f2fff0",
+        }}
+      >
+        {/* <Navbar /> */}
+        <Routes>
+          {/* <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/plants" element={<Plants />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/product-list" element={<ProductList />} />
+          <Route path="/product/:id" element={<ProductDisplay/>} /> */}
+
+          <Route path="/" element={<Navbar />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/plants" element={<Plants />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/product-list" element={<ProductList />} />
+            <Route path="/product/:id" element={<ProductDisplay />} />
+          </Route>
+
+        </Routes>
+        {/* <Footer /> */}
+      </div>
+    </BrowserRouter>
   );
 }
 
