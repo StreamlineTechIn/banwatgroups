@@ -37,7 +37,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/product-list" element={<ProductList />} />
             <Route path="/product/:id" element={<ProductDisplay />} />
-          </Route>
+         </Route>
 
         </Routes>
         {/* <Footer /> */}
