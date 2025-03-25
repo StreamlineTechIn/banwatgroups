@@ -6,9 +6,9 @@ import ProductDisplay from "./compnents/ProductList/ProductDisplay";
 import About from "./compnents/About/About";
 import Plants from "./compnents/Plants/Plants";
 import FAQ from "./compnents/FAQ/FAQ";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Contact from "./compnents/Contact/Contact";
-// import Footer from "./compnents/Landing_Page/Footer";
+import Footer from "./compnents/Landing_Page/Footer";
 
 function App() {
   return (
@@ -19,28 +19,17 @@ function App() {
           backgroundColor: "#f2fff0",
         }}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
-          {/* <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/plants" element={<Plants />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/product-list" element={<ProductList />} />
-          <Route path="/product/:id" element={<ProductDisplay/>} /> */}
-
-          <Route path="/" element={<Navbar />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/plants" element={<Plants />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/product-list" element={<ProductList />} />
-            <Route path="/product/:id" element={<ProductDisplay />} />
-         </Route>
-
+          <Route path="/product/:id" element={<ProductDisplay />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );
