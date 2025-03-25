@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
 
 const Navbar = () => {
@@ -11,10 +11,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-md" style={{ backgroundColor: "#f7fbf6" }}>
+      <nav
+        className="navbar navbar-expand-md"
+        style={{ backgroundColor: "#f7fbf6" }}
+      >
         <div className="container-fluid">
           {/* Brand / Logo */}
-          <NavLink className="navbar-brand fw-bold fs-4" to="/" style={{ color: "#14532d" }}>
+          <NavLink
+            className="navbar-brand fw-bold fs-4"
+            to="/"
+            style={{ color: "#14532d" }}
+          >
             Bawat Industries
           </NavLink>
 
@@ -35,7 +42,10 @@ const Navbar = () => {
             className={`collapse navbar-collapse${collapsed ? "" : " show"}`}
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav ms-auto mb-2 mb-md-0" style={{ gap: "1rem" }}>
+            <ul
+              className="navbar-nav ms-auto mb-2 mb-md-0"
+              style={{ gap: "1rem" }}
+            >
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
                   Home
@@ -75,7 +85,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <Outlet />
     </>
   );
 };
