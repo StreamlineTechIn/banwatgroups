@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap is imported
+import Footer from "../Landing_Page/Footer";
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useState(true);
@@ -76,7 +77,7 @@ const Navbar = () => {
         </div>
       </nav>
       <Outlet />
-      
+      <Footer />     {/*   changes */}
     </>
   );
 };
