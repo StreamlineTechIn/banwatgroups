@@ -12,7 +12,7 @@ import Footer from "./compnents/Landing_Page/Footer";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter>
       <div
         className="bg-[#D7EAD3] min-h-screen flex flex-col items-center"
         style={{
