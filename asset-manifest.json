@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/banwatgroups/static/css/main.bdb56671.css",
+    "main.js": "/banwatgroups/static/js/main.42d71e52.js",
+    "static/js/453.96fc923b.chunk.js": "/banwatgroups/static/js/453.96fc923b.chunk.js",
+    "static/media/promo_video.mp4": "/banwatgroups/static/media/promo_video.8124213aff227118b318.mp4",
+    "static/media/_MG_6881.JPG": "/banwatgroups/static/media/_MG_6881.903a69edf3649f3ae42a.JPG",
+    "static/media/_MG_6875.JPG": "/banwatgroups/static/media/_MG_6875.4492b9d62d6754eb9e60.JPG",
+    "static/media/FactoryImage.png": "/banwatgroups/static/media/FactoryImage.70d9a1760aed17e9ab44.png",
+    "static/media/KRUSHIPIPE.png": "/banwatgroups/static/media/KRUSHIPIPE.987ed0f2761ad3862b60.png",
+    "static/media/FLEXIBALEPIPE.png": "/banwatgroups/static/media/FLEXIBALEPIPE.998f73b361814a077ba7.png",
+    "static/media/HYDROGOLDRIP.png": "/banwatgroups/static/media/HYDROGOLDRIP.cab3fd78937b2d3b1753.png",
+    "static/media/FLAT.png": "/banwatgroups/static/media/FLAT.fe98c64402e092ab37da.png",
+    "static/media/_MG_6881-removebg-preview.png": "/banwatgroups/static/media/_MG_6881-removebg-preview.ce5c93cb28c5a5819964.png",
+    "index.html": "/banwatgroups/index.html",
+    "main.bdb56671.css.map": "/banwatgroups/static/css/main.bdb56671.css.map",
+    "main.42d71e52.js.map": "/banwatgroups/static/js/main.42d71e52.js.map",
+    "453.96fc923b.chunk.js.map": "/banwatgroups/static/js/453.96fc923b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdb56671.css",
+    "static/js/main.42d71e52.js"
+  ]
+}
